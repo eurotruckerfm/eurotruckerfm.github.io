@@ -1,1 +1,66 @@
-Well done, you found the brand new EuroTruckerFM domain. Watch this space.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EuroTruckerFM</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recent.css">
+    <script src="script.js" defer></script>
+  </head>  
+  <body>
+    <audio id="audio">
+         <source src="https://node-33.zeno.fm/7mynz7a2czzuv?rj-ttl=5&rj-tok=AAABcgllYLcAVQiM5u_95SSDVQ">
+      </audio>
+   <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      EuroTruckerFM
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="https://discord.gg/H3jpFnq">Discord</a>
+  </div>
+</div>
+    <div class="shows">
+       <center>
+<h3>
+  Weekly Shows
+         </h3>
+         <hr class="rounded">
+      </center>
+    </div>
+
+
+    
+
+    
+
+
+    
+    <div class="player">
+      <div class ="info">
+        <div class="track" id="track"> </div>
+      <div class="dj" id="dj"> </div>
+      </div>
+    	<i style="display: visible;" class="fas fa-play play1" onclick="play()"></i>
+    <i style="display: none;" onclick="pause()" class="fas fa-pause pause1"></i>
+	<input class="slider" id="vol-control"  type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </body>
+
+</html>
