@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+margin:0;
+
+  background: url("https://cdn.discordapp.com/attachments/603886079032164394/622866652408578048/THERIGHTCOLOURSA.png");
+  background: url("https://cdn.discordapp.com/attachments/603886079032164394/622866652408578048/THERIGHTCOLOURSA.png");
+  position: relative;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.track{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+
+}
+
+.recentlyplayed{
+  height: 350px;
+  width: 700px;
+  background-color: #555;
+  position:fixed;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  left:655px;
+  top:130px;
+  border-radius:5px;
+}
+
+.track1{
+
+  font-family: 'Poppins', sans-serif;
+    color:white;
+  text-align:center;
+  font-weight:bold;
+  top:5px;
+  position:relative;
+  
+
+}
+
+.recentsongs{
+  font-weight:bold;
+  font-family: 'Poppins', sans-serif;
+    color:white;
+  text-align:center;
+white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  width:500px;
+}
+
+
+.info{
+  padding-left: 30px;
+}
+
+.dj{
+  font-family: 'Poppins', sans-serif;
+    color:white;
+}
+
+marquee{
+  position:absolute;
+    transform: translate(-50%, -50%);
+top:25px;
+  width:500px;
+  left:20%;
+}
+
+.player{
+  bottom:0;
+  height: 50px;
+  width: 100%;
+  background-color: #485460;
+  position:fixed;
+  border-top: 3px solid white;
+}
+
+.square{
+  height: 1000%;
+  width: 1000%;
+  background-color: transparent;
+}
+
+
+
+.slider{
+
+ -webkit-appearance: none;
+  width: 200px;
+  height: 15px;
+  background: #f0f0f067;
+  outline: none;
+  border: none;
+  top: 23px; 
+  left: 50%; 
+  position: absolute; 
+  transform: translate(-50%, -50%);
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.play1 {
+font-size: 1.6vw;
+top: 25px;
+display: visible;
+left: 40%;
+position: absolute;
+transform: translate(-50%, -50%);
+color: white;
+}
+.pause1 {
+font-size: 1.6vw;
+top: 25px;
+left: 40%;
+position: absolute;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #485460;
+  position: fixed;
+  top: 0;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 3px solid white;
+  z-index:100;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+.slideshow-container {
+  max-width: 630px;
+  position: absolute;
+  margin: auto;
+  top:20%;
+  left:20px;
+  border-radius:20px;
+  overflow-y:scroll; 
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  border-radius:5px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.shows {
+  position: fixed;
+  top: 50%;
+  left: 15%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+   height: 400px;
+  width: 300px;
+  background-color: white;
+    font-family: 'Poppins', sans-serif;
+  padding:5px;
+  border-radius: 25px;
+}
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  color:black;
+}
+
