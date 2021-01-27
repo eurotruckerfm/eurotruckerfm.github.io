@@ -6,11 +6,18 @@
   <meta charset="UTF-8">
   <title>A simple clock</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ 
+@font-face {
+	font-family: 'Conv_SkyRegular';
+	src: url('fonts/SkyRegular.eot');
+	src: local('â˜º'), url('fonts/SkyRegular.woff') format('woff'), url('fonts/SkyRegular.ttf') format('truetype'), url('fonts/SkyRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 </style>
 </head>
 
-<body translate="no" style="font-family: 'Roboto', sans-serif;" >
+<body translate="no" style="font-family:'Conv_SkyRegular',Sans-Serif;" >
   <div id="output"></div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
